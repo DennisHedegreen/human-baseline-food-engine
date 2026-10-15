@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "publisher": "DTU National Food Institute",
+  "source_url": "https://fcdb.fooddata.dk/food/11/801",
+  "retrieved_on": "2026-10-14",
+  "database_version": null,
+  "record_id": "801",
+  "source_name": "Kartoffel, kogt",
+  "source_basis_heading": "Indhold per 100g",
+  "observations": [
+    {"source_label": "Energi (kcal)", "value": 85, "unit": "kcal"},
+    {"source_label": "Protein", "value": 1.7, "unit": "g"},
+    {"source_label": "Tilgængelig kulhydrat", "value": 18.6, "unit": "g"},
+    {"source_label": "Kostfibre", "value": 1.4, "unit": "g"},
+    {"source_label": "Fedt", "value": 0.1, "unit": "g"}
+  ],
+  "method": "Read directly from the current public DTU record in a fresh Chrome profile, necessary cookies only. Observed record ID 801, canonical URL and composition table. Danish decimal commas normalized; RI percentages not imported.",
+  "source_review": {
+    "url": "https://fcdb.fooddata.dk/disclaimer",
+    "reviewed_on": "2026-10-14",
+    "finding": "DTU states that the database draws partly on other national databases, provides no accuracy/completeness guarantees, and disclaims responsibility for subsequent use including software. This page does not state an explicit blanket redistribution licence.",
+    "scope": "Small local numerical extract; no finding that numerical use is prohibited and no whole-dataset redistribution approval claimed.",
+    "basis_documentation_url": "https://fcdb.fooddata.dk/introduction",
+    "basis_documentation_finding": "DTU explains that foods are representative market averages and the nutrient table defaults to amounts per 100 g of the food. Values may be measured, calculated, borrowed or estimated. The introduction does not supply a cooking-yield or purchased-weight factor."
+  },
+  "limitations": [
+    "Manual numerical extract, not an immutable raw response or complete dataset import.",
+    "Database release number not verified; URL segment 11 is not interpreted as a public release version.",
+    "Boiled composition only. The raw and boiled entries cannot establish cooking yield, peeling loss or required harvested mass.",
+    "Nutrient coverage is intentionally partial, not proof of a complete diet."
+  ]
+}

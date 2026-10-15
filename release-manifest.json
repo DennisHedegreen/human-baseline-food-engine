@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "tool_id": "human-baseline-food-engine",
+  "release_version": "v0.4.0",
+  "prepared_at": "2026-10-15T15:52:30+02:00",
+  "publication_timestamp": null,
+  "status": "approved_release_payload",
+  "runtime": {
+    "python": "3.12",
+    "entrypoint": "app.py",
+    "languages": [
+      "en"
+    ]
+  },
+  "scope": "Existing uniform population/kcal layer to one catalog food's energy-equivalent edible mass; not diet adequacy, purchased weight or price.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "source_path": "private/tools/human-baseline-food-engine/release/.gitignore",
+      "sha256": "be032f86219e72cff285888ef1858d2ae24107873c292bcecb39efa7695a2cff",
+      "bytes": 50
+    },
+    {
+      "path": ".streamlit/config.toml",
+      "source_path": "private/tools/human-baseline-food-engine/release/.streamlit/config.toml",
+      "sha256": "c684e36905912830b9a4dffeb568663f4cd8f684685c64935e916dc584e2fcfb",
+      "bytes": 61
+    },
+    {
+      "path": "CHANGELOG.md",
+      "source_path": "private/tools/human-baseline-food-engine/release/CHANGELOG.md",
+      "sha256": "2be392d5ce11681ed7ce7c514ec401af42354d49541961cb2dceb78870bfe422",
+      "bytes": 2264
+    },
+    {
+      "path": "README.md",
+      "source_path": "private/tools/human-baseline-food-engine/release/README.md",
+      "sha256": "73b6c95dbcbe66a6d19408a1476a96446906c0760ade6fbd6c090e4f605993c9",
+      "bytes": 3637
+    },
+    {
+      "path": "SOURCE-NOTICES.md",
+      "source_path": "private/tools/human-baseline-food-engine/release/SOURCE-NOTICES.md",
+      "sha256": "609553c611bdd4a101045b71a415dd4eed60ebec9d3fab04f42ef17a4c19fd87",
+      "bytes": 2287
+    },
+    {
+      "path": "_vendor/population/data/human-baseline-population/manifests/eurostat-demo_pjan-eu27-2025.json",
+      "source_path": "data/human-baseline-population/manifests/eurostat-demo_pjan-eu27-2025.json",
+      "sha256": "aa794c809f732b087fd2813be91afd36777332a6a39e61b1d6b088e4f0b2e5aa",
+      "bytes": 1251
+    },
+    {
+      "path": "_vendor/population/data/human-baseline-population/processed/eurostat-demo_pjan-eu27-2025-age-sex.csv",
+      "source_path": "data/human-baseline-population/processed/eurostat-demo_pjan-eu27-2025-age-sex.csv",
+      "sha256": "fc969cfe2c6abeaccf9a8665dddfd97e50e087d6f3c8be88fb9f2c7781da3f1a",
+      "bytes": 216686
+    },
+    {
+      "path": "_vendor/population/data/human-baseline-population/raw/eurostat-demo_pjan-eu27-2025.json",
+      "source_path": "data/human-baseline-population/raw/eurostat-demo_pjan-eu27-2025.json",
+      "sha256": "28e65e52dcbc02198278e0a60b337012191101d222fd399bfe51b432977fdeb7",
+      "bytes": 121126
+    },
+    {
+      "path": "_vendor/population/scenario_core.py",
+      "source_path": "private/tools/human-baseline-population/scenario_core.py",
+      "sha256": "66f2b020da3c6138e38356d18602cfb6735744d963fb2a34fd0354d918ae51db",
+      "bytes": 9452
+    },
+    {
+      "path": "_vendor/population/simple_model.py",
+      "source_path": "private/tools/human-baseline-population/simple_model.py",
+      "sha256": "75de7324d69f97fc58ed5ba420a91390512384ec05ed603e0109ad3974add3e6",
+      "bytes": 4453
+    },
+    {
+      "path": "app.py",
+      "source_path": "private/tools/human-baseline-food-engine/app.py",
+      "sha256": "6747f05b81dfdb17a8c51f0d01553fef3b17788501240e12e0daf986f649668e",
+      "bytes": 22795
+    },
+    {
+      "path": "calculate.py",
+      "source_path": "private/tools/human-baseline-food-engine/calculate.py",
+      "sha256": "bb227bd3ac5bad3059e987e9525a731d6ea14f817701ea244fa555ae68f83403",
+      "bytes": 1056
+    },
+    {
+      "path": "catalog.json",
+      "source_path": "private/tools/human-baseline-food-engine/catalog.json",
+      "sha256": "405b01528324e0fcc8132d91aa68720733ebba048c6285052b12e15944c7ad84",
+      "bytes": 6072
+    },
+    {
+      "path": "constraints.txt",
+      "source_path": "private/tools/human-baseline-food-engine/constraints.txt",
+      "sha256": "c548763aad0e248549c0bcf781ef20e49f01364465bd5328c90670e0bbd06782",
+      "bytes": 700
+    },
+    {
+      "path": "data/human-baseline-food/source-extracts/dtu-food-4-2026-10-13.json",
+      "source_path": "data/human-baseline-food/source-extracts/dtu-food-4-2026-10-13.json",
+      "sha256": "f2fc63022c8cd1cd5597cdb5ed7575f8040e3fce93241c4a0a9b612fbc1bfd2e",
+      "bytes": 1310
+    },
+    {
+      "path": "data/human-baseline-food/source-extracts/dtu-food-801-2026-10-14.json",
+      "source_path": "data/human-baseline-food/source-extracts/dtu-food-801-2026-10-14.json",
+      "sha256": "fb494418c953485e87e908d5473f2b3b504d628c705d6f969b04ec3b9aa50752",
+      "bytes": 2213
+    },
+    {
+      "path": "dependency-lock.json",
+      "source_path": "generated",
+      "sha256": "eee84d305b2074dd1f7b9feb4b3c32b5b9dc8688d2080b8960d571b0efc3eea7",
+      "bytes": 1219
+    },
+    {
+      "path": "example-demand.json",
+      "source_path": "private/tools/human-baseline-food-engine/example-demand.json",
+      "sha256": "43764902c2f12f9d93ab7697f7f8eb410a938217f3790e3e036a52f48d16c6d9",
+      "bytes": 1062
+    },
+    {
+      "path": "food_core.py",
+      "source_path": "private/tools/human-baseline-food-engine/food_core.py",
+      "sha256": "c048a9284be40531e4a3b6d985a6de39c864cd8dca68abb85f93f8baffe089b8",
+      "bytes": 10978
+    },
+    {
+      "path": "population_link.py",
+      "source_path": "private/tools/human-baseline-food-engine/population_link.py",
+      "sha256": "31d6c7801735867d98e2e583fac28a5db19ff9f9ea96e50a524dadbbff43de04",
+      "bytes": 2322
+    },
+    {
+      "path": "requirements.txt",
+      "source_path": "private/tools/human-baseline-food-engine/requirements.txt",
+      "sha256": "bf5c0837006d0124200df685bccc09fbe7d5de23938d9cbaaa9a425af5f79b04",
+      "bytes": 51
+    },
+    {
+      "path": "test_app.py",
+      "source_path": "private/tools/human-baseline-food-engine/test_app.py",
+      "sha256": "f2aace0f5cd89aa90e1812ed0a2ce4a474e2229abe8dbaa4e8308cb7e549d9ff",
+      "bytes": 5875
+    },
+    {
+      "path": "test_food_core.py",
+      "source_path": "private/tools/human-baseline-food-engine/test_food_core.py",
+      "sha256": "1181bee66a520969ad57f3484ee1806878ccdf3c0ffd3420c862f8151ee1500c",
+      "bytes": 11109
+    },
+    {
+      "path": "test_population_link.py",
+      "source_path": "private/tools/human-baseline-food-engine/test_population_link.py",
+      "sha256": "03858210be9ce5df40d9c3230dff7f13cce8d232c3c9aa9f15a099ceccdb7476",
+      "bytes": 2342
+    },
+    {
+      "path": "verify_release.py",
+      "source_path": "private/tools/human-baseline-food-engine/release/verify_release.py",
+      "sha256": "6b832fe3cc38cdb4574be3731545156deea94615125d964dcf6326e4fc94b4c6",
+      "bytes": 1324
+    }
+  ]
+}

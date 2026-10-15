@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "catalog_version": "0.3",
+  "nutrients": {
+    "energy": {"names": {"en": "Energy", "da": "Energi"}, "unit": "kcal", "definition": "Source-reported metabolizable food energy"},
+    "protein": {"names": {"en": "Protein", "da": "Protein"}, "unit": "g", "definition": "DTU source parameter Protein"},
+    "fat": {"names": {"en": "Fat", "da": "Fedt"}, "unit": "g", "definition": "DTU source parameter Fedt"},
+    "available_carbohydrate": {"names": {"en": "Available carbohydrate", "da": "Tilgængelig kulhydrat"}, "unit": "g", "definition": "Available carbohydrate, not carbohydrate by difference"},
+    "fibre": {"names": {"en": "Dietary fibre", "da": "Kostfibre"}, "unit": "g", "definition": "DTU source parameter Kostfibre"},
+    "vitamin_c": {"names": {"en": "Vitamin C", "da": "Vitamin C"}, "unit": "mg", "definition": "Reserved nutrient definition; value not imported in this gate"}
+  },
+  "sources": {
+    "dtu-food-4-capture-2026-10-13": {
+      "publisher": "DTU National Food Institute",
+      "url": "https://fcdb.fooddata.dk/food/11/4",
+      "legacy_record_url": "https://frida.fooddata.dk/food/4?lang=en",
+      "record_id": "4",
+      "retrieved_on": "2026-10-13",
+      "database_version": null,
+      "reuse_status": "Local numeric extract; DTU disclaimer reviewed 2026-10-14, not an explicit blanket redistribution licence",
+      "reuse_review_url": "https://fcdb.fooddata.dk/disclaimer",
+      "method": "Fresh browser, necessary cookies only, search kartoffel then Enter; observed record 4 at /food/11/4 and table headed Indhold per 100g. No reference-intake percentages imported.",
+      "source_extract": "data/human-baseline-food/source-extracts/dtu-food-4-2026-10-13.json"
+    },
+    "dtu-food-801-capture-2026-10-14": {
+      "publisher": "DTU National Food Institute",
+      "url": "https://fcdb.fooddata.dk/food/11/801",
+      "record_id": "801",
+      "retrieved_on": "2026-10-14",
+      "database_version": null,
+      "reuse_status": "Local numeric extract; DTU disclaimer reviewed 2026-10-14, not an explicit blanket redistribution licence",
+      "reuse_review_url": "https://fcdb.fooddata.dk/disclaimer",
+      "method": "Read the current public record in a fresh browser, necessary cookies only; observed record 801, composition per 100 g. Danish decimal commas normalized to numeric values. Reference-intake percentages not imported.",
+      "source_extract": "data/human-baseline-food/source-extracts/dtu-food-801-2026-10-14.json"
+    }
+  },
+  "foods": [{
+    "schema_version": "1.0",
+    "id": "dtu-4-potato-raw-unspecified",
+    "version": "capture-2026-10-13",
+    "names": {"en": "Potato, unspecified, raw", "da": "Kartoffel, uspec., rå"},
+    "state": "raw",
+    "item_default": {
+      "id": "illustrative-potato", "version": "1", "label": "potato",
+      "food_id": "dtu-4-potato-raw-unspecified", "food_version": "capture-2026-10-13",
+      "state": "raw", "mass_kind": "edible", "grams_per_item": 150,
+      "status": "scenario_assumption",
+      "provenance": "Illustrative 150 g edible raw potato chosen for this calculator, not a measured average or DTU item-weight observation. Editable."
+    },
+    "edible_portion_description": "Source composition per 100 g food; edible composition basis, no purchased-mass or peel-loss conversion imported",
+    "basis": {"amount": 100, "unit": "g", "mass_kind": "edible"},
+    "observations": {
+      "energy": {"value": 77, "unit": "kcal", "status": "reported", "source_id": "dtu-food-4-capture-2026-10-13"},
+      "protein": {"value": 2, "unit": "g", "status": "reported", "source_id": "dtu-food-4-capture-2026-10-13"},
+      "fat": {"value": 0.3, "unit": "g", "status": "reported", "source_id": "dtu-food-4-capture-2026-10-13"},
+      "available_carbohydrate": {"value": 15.9, "unit": "g", "status": "reported", "source_id": "dtu-food-4-capture-2026-10-13"},
+      "fibre": {"value": 1.4, "unit": "g", "status": "reported", "source_id": "dtu-food-4-capture-2026-10-13"},
+      "vitamin_c": {"value": null, "unit": "mg", "status": "unknown"}
+    },
+    "notes": ["Raw-composition mass equivalent, not advice to eat raw potatoes.", "No cooking yield, purchased weight, loss, cost or complete-diet approval."]
+  }, {
+    "schema_version": "1.0",
+    "id": "dtu-801-potato-boiled",
+    "version": "capture-2026-10-14",
+    "names": {"en": "Potato, boiled", "da": "Kartoffel, kogt"},
+    "state": "boiled",
+    "item_default": {
+      "id": "illustrative-potato", "version": "1", "label": "potato",
+      "food_id": "dtu-801-potato-boiled", "food_version": "capture-2026-10-14",
+      "state": "boiled", "mass_kind": "edible", "grams_per_item": 150,
+      "status": "scenario_assumption",
+      "provenance": "Illustrative 150 g edible boiled potato chosen independently for this calculator, not a measured average, DTU item-weight observation or raw-to-boiled yield conversion. Editable."
+    },
+    "edible_portion_description": "Composition per 100 g of the boiled food; no conversion to raw, harvested or purchased weight",
+    "basis": {"amount": 100, "unit": "g", "mass_kind": "edible"},
+    "observations": {
+      "energy": {"value": 85, "unit": "kcal", "status": "reported", "source_id": "dtu-food-801-capture-2026-10-14"},
+      "protein": {"value": 1.7, "unit": "g", "status": "reported", "source_id": "dtu-food-801-capture-2026-10-14"},
+      "fat": {"value": 0.1, "unit": "g", "status": "reported", "source_id": "dtu-food-801-capture-2026-10-14"},
+      "available_carbohydrate": {"value": 18.6, "unit": "g", "status": "reported", "source_id": "dtu-food-801-capture-2026-10-14"},
+      "fibre": {"value": 1.4, "unit": "g", "status": "reported", "source_id": "dtu-food-801-capture-2026-10-14"},
+      "vitamin_c": {"value": null, "unit": "mg", "status": "unknown"}
+    },
+    "notes": ["Mass refers to boiled composition, not farm output or raw input.", "The raw and boiled records are not a paired cooking-yield experiment; their energy-density ratio is not a yield factor.", "No price, losses or complete-diet assessment is included."]
+  }]
+}

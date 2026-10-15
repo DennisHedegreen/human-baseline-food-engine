@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "publisher": "DTU National Food Institute",
+  "source_url": "https://fcdb.fooddata.dk/food/11/4",
+  "retrieved_on": "2026-10-13",
+  "database_version": null,
+  "record_id": "4",
+  "source_name": "Kartoffel, uspec., rå",
+  "source_basis_heading": "Indhold per 100g",
+  "observations": [
+    {"source_label": "Energi (kcal)", "value": 77, "unit": "kcal"},
+    {"source_label": "Protein", "value": 2, "unit": "g"},
+    {"source_label": "Tilgængelig kulhydrat", "value": 15.9, "unit": "g"},
+    {"source_label": "Kostfibre", "value": 1.4, "unit": "g"},
+    {"source_label": "Fedt", "value": 0.3, "unit": "g"}
+  ],
+  "method": "Read twice from public rendered DTU UI in a fresh Chrome profile, necessary cookies only. Search kartoffel, Enter, read record ID, URL and composition table. Reference-intake percentages not imported.",
+  "limitations": [
+    "This is a small manual numeric extract, not a complete dataset download or immutable raw response.",
+    "Database release number not verified; URL segment 11 is not assumed to be a public version number.",
+    "Raw composition only; no cooking yield, peeling loss or purchased-weight conversion.",
+    "Specific reuse terms not reviewed in this bounded local gate; this is not a finding that numeric use is prohibited."
+  ]
+}

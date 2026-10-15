@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "calculation_version": "intake-energy-1.1",
+  "population": {
+    "schema_version": "1.0", "id": "example-population", "name": "Illustrative population",
+    "origin": "user_input", "total_people": 1000000, "sources": [],
+    "assumptions": ["Illustrative headcount, not official country statistics"]
+  },
+  "energy_scenario": {
+    "schema_version": "1.0", "id": "example-energy", "population_id": "example-population",
+    "method_id": "flat_kcal_per_person_day", "method_version": "1.0",
+    "parameters": {"kcal_per_person_day": 3000},
+    "time_basis": {"kind": "fixed_repeated_day", "days_per_year": 365, "months_per_year": 12},
+    "sources": [], "assumptions": ["One illustrative daily kcal figure for every person; no separate allowance"]
+  },
+  "kcal_day": 3000000000,
+  "kcal_year": 1095000000000,
+  "kcal_average_month": 91250000000,
+  "kcal_per_person_day": 3000,
+  "components": [{"id": "flat_intake", "kcal_day": 3000000000}],
+  "interpretation": "intake_energy_scenario_not_validated_food_production_requirement"
+}
